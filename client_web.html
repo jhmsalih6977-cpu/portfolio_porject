@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junaid Ahmad web developer</title>
+    <link rel="stylesheet" href="client_web.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init({
+            publicKey: "8BHQdzs5fui9Tf929",
+        });
+    </script>
+</script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Junaid.dev</div>
+        <ul class="nav-links" id="mobileMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta" >Hire me</a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <section id="home" class="hero">
+
+        <div class="hero-slides">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                ✨ Available for Freelnce Work
+            </div>
+            
+
+            <h1>
+                I Build <span class="highlight">Creative</span><br>
+                Websites That <span class="highlight2">Convert</span>
+            </h1>
+
+            <div class="typewriter-text" id="typewriter"></div>
+
+            <p class="hero-subtile">
+                Professional web developer from Lahore, Pakistan.
+                Specializing in modern, fast & bautifull websites that help businesses grow online!
+            </p>
+
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn-main">View My Work 🎯</a>
+                <a href="#contact" class="btn-outline">Let's Talk 💬</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3 class="count" data-target="17">0</h3>
+                    <p>Projects Done</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <h3 class="count" data-target="10">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <h3 class="count" data-target="1">0</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-dots">
+            <div class="dot active" onclick="goToSlide(0)"></div>
+            <div class="dot" onclick="goToSlide(1)"></div>
+            <div class="dot" onclick="goToSlide(2)"></div>
+            <div class="dot" onclick="goToSlide(3)"></div>
+        </div>
+
+        <div class="scroll-down" onclick="document.getElementById('services').scrollIntoView({behaivor: 'smooth'})">
+            <div class="scroll-arrow"></div>
+            <p>Scroll Down</p>
+        </div>
+
+    </section>
+
+    <section id="services">
+        <div class="section-header">
+            <div class="section-tag">WHAT I DO</div>
+            <h2>My <span style="color: #667eea;">Services</span></h2>
+            <p>I Offer Complete web solutions to help your business successed online.</p>
+        </div>
+
+        <div class="services-grid">
+           <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Website Design</h3>
+                <p>Beautiful, modern websites that impress visitors and convert them into customers.</p>
+                <ul class="service-features">
+                    <li>Cutome Design</li>
+                    <li>Movile Responsive</li>
+                    <li>Fast Loading</li>
+                    <li>SEO Friendly</li>
+                </ul>
+           </div>
+        
+
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3>Web Development</h3>
+                <p>Fully functional web apps with modern JavaScript and clean code.</p>
+                <ul class="service-features">
+                    <li>Interactive Features</li>
+                    <li>API Integration</li>
+                    <li>Clean Code</li>
+                    <li>Fast Performance</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>User-friendly interfaces that are easy to use visually stunning.</p>
+                <ul class="service-features">
+                    <li>Modern UI</li>
+                    <li>Smooth Animation</li>
+                    <li>Great UX</li>
+                    <li>Brand Colors</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔌</div>
+                <h3>API Intergration</h3>
+                <p>Connect your website with third-party services and API seamlessly.</p>
+                <ul class="service-features">
+                    <li>Payment APIs</li>
+                    <li>Social Login</li>
+                    <li>Weather/News</li>
+                    <li>Custom APIs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="portfolio">
+
+        <div class="section-header">
+            <div class="section-tag">My Wrok</div>
+            <h2>Recent <span style="color:#667eea;">Projects</span></h2>
+            <p>Some of my recent work that I'm proud of</p>
+        </div>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-card">
+                <div class="portfolio-img">🧮</div>
+                <div class="portfolio-info">
+                    <h3>Calculator App</h3>
+                    <p>Fully functional calculator with advanced operations.</p>
+                    <div class="protfolio-tags">
+                        <span class="ptag">HTML</span>
+                        <span class="ptag">CSS</span>
+                        <span class="ptag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-img">🍲</div>
+                <div class="portfolio-info">
+                    <h3>Recipe Finder</h3>
+                    <p> 1000+ recipes using real API.</p>
+                    <div class="portfolio-tags">
+                        <span class="ptag">API</span>
+                        <span class="ptag">async / await</span>
+                        <span class="ptag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-img">💰</div>
+                <div class="portfolio-info">
+                    <h3>Currency Converter</h3>
+                    <p>Real-time currency conversion with live rates.</p>
+                    <div class="portfolio-tags">
+                        <span class="ptag">API</span>
+                        <span class="ptag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-img">🎬</div>
+                <div class="portfolio-info">
+                    <h3>Movie Finder</h3>
+                    <p>Search movies usging OMDB API with posters.</p>
+                    <div class="portfolio-tags">
+                        <span class="ptag">OMDB API</span>
+                        <span class="ptag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-img">🐍</div>
+                <div class="portfolio-info">
+                    <h3>Snake Game</h3>
+                    <p>Classic snake game with Canvas JS.</p>
+                    <div class="portfolio-tags">
+                        <span class="ptag">Canvas</span>
+                        <span class="ptag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-img">⏰</div>
+                <div class="portfolio-info">
+                    <h3>Countdown Timer</h3>
+                    <p>Event countdown with hours, minutes, seconds.</p>
+                    <div class="portfolio-tags">
+                        <span class="ptag">JavaScript</span>
+                        <span class="ptag">CSS</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pricing">
+
+        <div class="section-header">
+            <div class="section-tag">PACKAGES </div>
+            <h2>My <span style="color: #667eea;">Pricing</span></h2>
+            <p>Affordable packages for every budget</p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <div class="price">$50 <span>/ project</span></div>
+                <p>Perfect for small businesses</p>
+                <ul class="pricing-features">
+                    <li>1 Page Website</li>
+                    <li>Mobile Responsive</li>
+                    <li>Basic Design</li>
+                    <li>3 Days Delivery</li>
+                    <li>1 Revision</li>
+                </ul>
+                <a href="#contact" class="pricing-btn">Get Started</a>
+            </div>
+
+            <div class="pricing-card popular">
+                <div class="popular-badge">⭐ Most Popular</div>
+                <h3>Standard</h3>
+                <div class="price">$120 <span>/ project</span></div>
+                <p>Best for growing businesses</p>
+                <ul class="pricing-features">
+                    <li>5 Pages Websites</li>
+                    <li>Mobile Responsive</li>
+                    <li>Premium Design</li>
+                    <li>7 Days Delivery</li>
+                    <li>3 Revisions</li>
+                </ul>
+                <a href="#contact" class="pricing-btn">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <div class="price">$250 <span>/ project</span></div>
+                <p>For large scale projects</p>
+                <ul class="pricing-features">
+                    <li>10+ Pages Website</li>
+                    <li>Mobile Responsive</li>
+                    <li>Custom Design</li>
+                    <li>14 Days Delivery</li>
+                    <li>Unlimited Revisions</li>
+                </ul>
+                <a href="#contact" class="pricing-btn">Get Started</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <div class="section-header">
+            <div class="section-tag">GET IN TOUCH</div>
+            <h2>Let's <span style="color: #667eea;">Work Together</span></h2>
+            <p>Have a porject in mind? Let's discuss it!</p>
+        </div>
+
+        <div class="contact-wrapper">
+
+            <div class="contact-info">
+                <div class="info-box">
+                    <span class="info-icon">📧</span>
+                    <div>
+                        <h4>Email</h4>
+                        <p>junaid@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-icon">📱</div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+92 344 6977 312</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Islamabad, Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <span class="info-icon">⏰</span>
+                    <div>
+                        <h4>Response Time</h4>
+                        <p>Within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+
+                <div class="form-row">
+                    <input type="text" id="clientName" placeholder="Your Name">
+                    <input type="email" id="clientEmail" placeholder="Your Email">
+                </div>
+
+                <select id="service">
+                    <option value="">Select Service</option>
+                    <option value="website">Website Design</option>
+                    <option value="development">Web Development</option>
+                    <option value="uiux">UI/UX Design</option>
+                    <option value="api">API Integration</option>
+                </select>
+
+                <input type="text" id="budget" placeholder="Your Budget (e.g. $100)">
+                <textarea id="message" placeholder="Tell me about your project..."></textarea>
+                <button class="submit-btn" onclick="submitForm()">Send Message🚀</button>
+
+                <div class="success-msg" id="successMsg">
+                   ✅ Message sent! I'll reply within 24 hours!
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-content">
+            <div class="footer-logo">⚡Junaid.dev</div>
+            <p class="footer-text">
+                Building Beautiful websites that help businesses grow! 🚀
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Junaid Pathan. All rights reserved.</p>
+            <p>Made with ♥ in Islamabad, Pakistan</p>
+        </div>
+
+    </footer>
+
+    <a href="https://wa.ma/923446977312" class="whatsapp-btn" target="_blank">💬</a>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()">⬆️</button>
+
+
+    <script>
+
+        function toggleMenu(){
+            let menu = document.getElementById("mobileMenu")
+            if(menu.style.display == "flex"){
+                menu.style.display = "none"
+            }else{
+                menu.style.display = "flex"
+            }
+        }
+
+        let texts = [
+            "Web Designer",
+            "JavaScript Developer",
+            "UI/UX Designer",
+            "Problem Solver",
+            "Freelancer on Fiverr"
+        ]
+
+        let tIndex = 0
+        let cIndex = 0
+        let deleting = false
+
+        function typewriter(){
+            let current = texts[tIndex]
+            if(!deleting){
+                cIndex++
+            }else{
+                cIndex--
+            }
+
+            document.getElementById("typewriter").innerHTML = current.substring(0, cIndex)
+            if(!deleting && cIndex == current.length){
+                setTimeout(() => deleting = true, 1500)
+            }
+
+            if(deleting && cIndex == 0){
+                deleting = false;
+                tIndex = (tIndex + 1) % texts.length;
+            }
+            setTimeout(typewriter, deleting ? 50 : 100)
+        }
+
+        typewriter()
+
+        console.log(document.getElementById("typewriter"))
+
+        let currentSlide = 0
+        let slides = document.querySelectorAll(".slide")
+        let dots = document.querySelectorAll(".dot");
+
+        function goToSlide(index){
+            slides[currentSlide].classList.remove("active")
+            dots[currentSlide].classList.remove("active")
+            currentSlide = index;
+            slides[currentSlide].classList.add("active")
+            dots[currentSlide].classList.add("active")
+        }
+
+        function nextSlide(){
+            let next = (currentSlide + 1) % slides.length;
+            goToSlide(next)
+        }
+
+        goToSlide(0)
+
+        setInterval(nextSlide, 4000)
+
+        function countUp(){
+            let counts = document.querySelectorAll(".count")
+            counts.forEach(function(count){
+                let target = parseInt(count.getAttribute("data-target"));
+                let current = 0
+                let increment = target / 50
+
+                let timer = setInterval(function(){
+                    current += increment;
+                    if(current >= target){
+                        current = target;
+                        clearInterval(timer)
+                    }
+                    count.innerHTML = Math.floor(current)
+                }, 40)
+            });
+        }
+
+        window.addEventListener("load", function(){
+            setTimeout(countUp, 1500)
+        })
+
+        function checkCards(){
+            let serviceCard = document.querySelectorAll(".service.card")
+            // console.log(serviceCard)
+            serviceCard.forEach(function(card){
+                let pos = card.getBoundingClientRect().top;
+                // console.log(pos)
+                if(pos < window.innerHeight){
+                    card.classList.add("visible")
+                }
+            })
+        }
+
+        window.addEventListener("scroll", checkCards)
+        window.addEventListener("load", checkCards)
+
+        function submitForm(){
+
+            let name = document.getElementById("clientName").value
+            let email = document.getElementById("clientEmail").value
+            let service = document.getElementById("service").value
+            let budget = document.getElementById("budget").value
+            let message = document.getElementById("message").value
+
+            if(name == ""){
+                alert("name likho pehly")
+            }else if(email == ""){
+                alert("email likho pehlay")
+            }else if(message == ""){
+                alert("message likho pehlay")
+            }
+
+            let btn = document.querySelector(".submit-btn")
+            btn.innerHTML = "Sending... ⏳"
+            btn.disabled = true
+
+            emailjs.send("service_fiz6whf", "template_uz2wlki", {
+                from_name: name,
+                from_email: email,
+                service: service,
+                budget: budget,
+                message: message
+            })
+
+            setTimeout(function(){
+                btn.innerHTML = "Send Message 🚀"
+                btn.disabled = false
+            
+
+                document.getElementById("successMsg").style.display = "block"
+
+                document.getElementById("clientName").value = ""
+                document.getElementById("clientEmail").value = ""
+                document.getElementById("service").value = ""
+                document.getElementById("budget").value = ""
+                document.getElementById("message").value = ""
+
+                setTimeout(function(){
+                    document.getElementById("successMsg").style.display = "none"
+                }, 5000)
+            }, 2000)
+        }
+
+        window.addEventListener("scroll", function(){
+            let btn = document.getElementById("scrollTopBtn");
+            if(window.scrollY > 400){
+                btn.classList.add("show")
+            }else{
+                btn.classList.remove("show")
+            }
+        })
+
+        function scrollToTop(){
+            window.scrollTo({
+                top: 0,
+                behaivor: "smooth"
+            })
+        }
+
+    </script>
+</body>
+</html>
