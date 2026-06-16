@@ -916,7 +916,7 @@ footer{
     animation: none;
 }
 
-.scroll-top-btn{
+.scroll-top-btn {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -932,6 +932,10 @@ footer{
     transition: all 0.3s;
     box-shadow: 0 0 20px rgba(102, 126, 234, 0.4);
     z-index: 999;
+}
+
+.scroll-top-btn i{
+    color: black;
 }
 
 .scroll-top-btn.show{
@@ -951,7 +955,7 @@ footer{
     }
 
     .nav-links{
-        display: none;
+        display: none !important;
         flex-direction: column;
         width: 100%;
         gap: 0;
